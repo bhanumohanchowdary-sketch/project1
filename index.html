@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Institute of Digital Risk</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+line-height:1.6;
+color:#111;
+background:white;
+}
+
+/* NAVBAR */
+
+header{
+position:sticky;
+top:0;
+background:white;
+border-bottom:1px solid #eee;
+z-index:1000;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:black;
+font-weight:500;
+}
+
+nav a:hover{
+color:#ff6a00;
+}
+
+/* HERO */
+
+.hero{
+background:#111;
+color:white;
+padding:100px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.btn{
+background:#ff6a00;
+color:white;
+padding:12px 28px;
+border-radius:4px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn:hover{
+background:#e25d00;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:30px;
+margin-bottom:40px;
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+border:1px solid #eee;
+padding:25px;
+border-radius:6px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+.card h3{
+color:#ff6a00;
+margin-bottom:10px;
+}
+
+/* PIPELINE */
+
+.pipeline{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:20px;
+margin-top:30px;
+}
+
+.step{
+flex:1;
+min-width:120px;
+text-align:center;
+padding:15px;
+border-top:3px solid #ff6a00;
+background:#fafafa;
+}
+
+/* COMMUNITY */
+
+.community{
+background:#fafafa;
+text-align:center;
+}
+
+/* FORM */
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:10px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+button{
+padding:12px;
+border:none;
+background:#ff6a00;
+color:white;
+font-weight:600;
+cursor:pointer;
+}
+
+button:hover{
+background:#e25d00;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:28px;
+}
+
+nav ul{
+gap:15px;
+font-size:14px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<!-- Logo (Icon + Text SVG) -->
+
+<svg width="160" height="40" viewBox="0 0 420 120">
+
+<polygon points="50,5 90,25 50,45 10,25" fill="#ff6a00"/>
+<polygon points="10,25 50,45 50,85 10,65" fill="#000"/>
+<polygon points="90,25 50,45 50,85 90,65" fill="#333"/>
+<polygon points="50,48 62,55 58,70 50,75 42,70 38,55" fill="#fff"/>
+
+<text x="120" y="60" font-size="32" fill="black" font-weight="700">
+IDR
+</text>
+
+</svg>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+<li><a href="#services">Model</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Advancing the Future of Digital Risk</h1>
+
+<p>
+The Institute of Digital Risk (IDR) trains and deploys the next generation of
+digital, cyber and AI risk practitioners by combining academic collaboration
+with real-world industry experience.
+</p>
+
+<a href="#services" class="btn">Explore Programs</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">About IDR</h2>
+
+<p>
+The Institute of Digital Risk is an industry-led training and deployment
+institute focused on building professionals capable of managing digital,
+cyber and technology risk in complex and highly regulated environments.
+</p>
+
+<br>
+
+<p>
+Working in collaboration with academic partners including UK universities,
+IDR bridges the gap between theoretical research and real-world practice.
+Participants gain practical experience through applied projects,
+risk modelling and framework implementation.
+</p>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="container">
+
+<h2 class="section-title">Our Model</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Academy</h3>
+<p>
+Training programs and bootcamps designed to equip students and professionals
+with practical cyber and digital risk capabilities.
+</p>
+</div>
+
+<div class="card">
+<h3>Innovation & Incubation</h3>
+<p>
+Developing new risk models, AI governance frameworks and digital security
+solutions through applied research and experimentation.
+</p>
+</div>
+
+<div class="card">
+<h3>Advisory Services</h3>
+<p>
+Supporting organisations in implementing frameworks such as
+NIST, ISO 27001 and NIS2 to strengthen digital risk management.
+</p>
+</div>
+
+</div>
+
+<div class="pipeline">
+
+<div class="step">Train</div>
+<div class="step">Hire</div>
+<div class="step">Innovate</div>
+<div class="step">Deploy</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- COMMUNITY -->
+
+<section id="community" class="community">
+
+<div class="container">
+
+<h2 class="section-title">Community</h2>
+
+<p style="max-width:700px;margin:auto;">
+IDR supports a diverse community of students, early-career professionals and
+experienced practitioners seeking to build expertise in digital, cyber and AI
+risk. Our network includes organisations across financial services,
+technology and critical infrastructure sectors.
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="section-title">Register Interest</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<textarea rows="5" placeholder="Message"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>© 2026 Institute of Digital Risk</p>
+
+</footer>
+
+<script>
+
+/* Smooth Scrolling */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+anchor.addEventListener("click",function(e){
+e.preventDefault();
+document.querySelector(this.getAttribute("href"))
+.scrollIntoView({behavior:"smooth"});
+});
+});
+
+</script>
+
+</body>
+</html>
